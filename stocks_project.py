@@ -3,10 +3,9 @@ from twilio.rest import Client
 import requests
 
 url = "https://www.moneycontrol.com/india/stockpricequote/auto-lcvshcvs/tatamotors/TM03"
-twilio_sid = "AC0975d908fd1ccd7fa407f9047dfc4c52"
-twilio_auth_token = "a3c7cb0e8fba9182bd47c5c2dc3de93a"
-mobile_no = "+916387373782"
-threshold = "600"
+twilio_sid = "YOUR TWILIO_SID"
+twilio_auth_token = "YOUR TWILIO_AUTH_TOKEN"
+threshold = "500"                                                                              # CHOOSE YOUR THRESHHOLD VALUE
 
 while True:
     r = requests.get(url)
@@ -42,7 +41,8 @@ while True:
         message = client.messages.create(
             body=message_string,
             from_="+14342312749",
-            to="+916387373782"
+            to="ENTER YOUR MOBILE NUMBER"
         )
+        
         print("Message Sent")
         break
