@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup as BS
 from twilio.rest import Client
 import requests
 
-url = "https://www.moneycontrol.com/india/stockpricequote/auto-lcvshcvs/tatamotors/TM03"
+url = "https://www.moneycontrol.com/india/stockpricequote/auto-lcvshcvs/tatamotors/TM03"       # STOCK : TATA MOTORS LTD 
 twilio_sid = "YOUR TWILIO_SID"
 twilio_auth_token = "YOUR TWILIO_AUTH_TOKEN"
 threshold = "500"                                                                              # CHOOSE YOUR THRESHHOLD VALUE
